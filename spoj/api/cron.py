@@ -4,6 +4,7 @@ from spoj.settings import EMAIL_HOST_USER
 from django.core.mail import send_mail	
 
 def my_cron_job():
+    #checking if cronjobs has started , you will get a mail
     subject = 'Welcome to Codedigger'
     message = 'Hope you are enjoying our Problems'
     recepient = 'aaradhyaberi777@gmail.com'

@@ -28,5 +28,4 @@ class StatusAPIView(
         if tags is not None:
             qs = qs.filter(tags__icontains = tags)
         return qs
-    #my_cron_job()
        

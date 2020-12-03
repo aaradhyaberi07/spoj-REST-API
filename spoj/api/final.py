@@ -12,13 +12,6 @@ from .models import Problem
 
 def scraper():
     field_names= ['name', 'link', 'id', 'tags']
-    # classical = []
-    # challenge = []
-    # partial = []
-    # tutorial = []
-    # riddle = []
-    # basics = []
-    # final = []
     default = "https://www.spoj.com"
 
     display = Display(visible=0, size=(800, 800))  

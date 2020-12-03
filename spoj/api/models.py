@@ -1,6 +1,5 @@
 from django.db import models
 
-# Create your models here.
 class Problem(models.Model):
     name = models.CharField(max_length=500)
     prob_id = models.CharField(max_length=100)

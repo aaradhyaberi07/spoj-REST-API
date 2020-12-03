@@ -128,6 +128,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+#CronJob settings
 CRONJOBS = [
     ('30 12 * * *', 'api.cron.my_cron_job')
 ]
