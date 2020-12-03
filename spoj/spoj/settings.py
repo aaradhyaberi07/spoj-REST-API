@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'api',
     'rest_framework',
+    'django_crontab',
 ]
 
 MIDDLEWARE = [
@@ -126,3 +127,18 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+CRONJOBS = [
+    ('30 12 * * *', 'api.cron.my_cron_job')
+]
+
+
+#EMAIL SETTING
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+EMAIL_PORT = 587
+EMAIL_HOST_USER = "shivamsinghal5170@gmail.com"
+EMAIL_HOST_PASSWORD = "1012@ejoty"
